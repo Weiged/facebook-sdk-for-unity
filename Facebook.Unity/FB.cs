@@ -1033,7 +1033,7 @@ namespace Facebook.Unity
             /// </summary>
             public static bool IsImplicitPurchaseLoggingEnabled()
             {
-                return Mobile.MobileFacebookImpl.IsImplicitPurchaseLoggingEnabled();
+                return IsInitialized && Mobile.MobileFacebookImpl.IsImplicitPurchaseLoggingEnabled();
             }
 
             /// <summary>
